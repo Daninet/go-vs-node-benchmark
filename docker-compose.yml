@@ -1,4 +1,4 @@
-version: "3.8"
+version: "2"
 services:
   postgres:
     image: postgres:12.3
@@ -12,8 +12,36 @@ services:
     build: ./fastify
     ports:
     - "3001:3001"
+    depends_on:
+      - postgres
 
   go:
     build: ./go
     ports:
     - "3002:3002"
+    depends_on:
+      - postgres
+
+  nginx:
+    build: ./nginx
+    ports:
+    - "80:80"
+    depends_on:
+      - go
+      - js
+
+  # haproxy:
+  #   build: ./haproxy
+  #   ports:
+  #   - "81:80"
+  #   depends_on:
+  #     - go
+  #     - js
+
+  # envoy:
+  #   build: ./envoy
+  #   ports:
+  #   - "83:80"
+  #   depends_on:
+  #     - go
+  #     - js
