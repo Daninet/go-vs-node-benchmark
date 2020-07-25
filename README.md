@@ -1,7 +1,10 @@
 # Go vs Node.js REST backend benchmark 2020
 
-Go v1.14 + Fiber v1.13.3
-Node.js v14.6.0 + Fastify v3.1.1
+**Go** v1.14 + **Fiber** v1.13.3
+
+\- vs -
+
+**Node.js** v14.6.0 + **Fastify** v3.1.1
 
 ## Results
 
