@@ -2,11 +2,12 @@
 
 ## Results
 
-![Requests per second at concurrency = 100](images/rps.png)
+  <img src="images/rps.png" alt="Requests per second at concurrency = 100" width="60%">
 
-![Node.js relative performance compared to Go](images/rps_node.png)
+  <img src="images/rps_node.png" alt="Node.js relative performance compared to Go" width="60%">
 
-![Node.js relative latency compared to Go](images/latency_node.png)
+  <img src="images/latency_node.png" alt="Node.js relative latency compared to Go" width="60%">
+
 
 
 |   |                              | Concurrency 10 | Avg. latency | Concurrency 100 | Avg. latency | Concurrency 250 | Avg. latency |
