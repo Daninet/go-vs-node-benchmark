@@ -1,6 +1,13 @@
 # Go - Fiber vs Node.js Fastify REST backend benchmark 2020
 
-# Results
+## Results
+
+![Requests per second at concurrency = 100](images/rps.png)
+
+![Node.js relative performance compared to Go](images/rps_node.png)
+
+![Node.js relative latency compared to Go](images/latency_node.png)
+
 
 |   |                              | Concurrency 10 | Avg. latency | Concurrency 100 | Avg. latency | Concurrency 250 | Avg. latency |
 |---|------------------------------|----------------|--------------|-----------------|--------------|-----------------|--------------|
@@ -12,7 +19,7 @@
 |   | Query and sort mutliple rows | 47.6 %         | 209.5 %      | 42.1 %          | 236.0 %      | 34.3 %          | 275.1 %      |
 
 
-# Raw measurements
+## Raw measurements
 
 |   |                                        | Concurrency 10 | Avg. latency | Concurrency 100 | Avg. latency | Concurrency 250 | Avg. latency |
 |---|----------------------------------------|----------------|--------------|-----------------|--------------|-----------------|--------------|
@@ -30,7 +37,7 @@
 |   | Query and sort multiple rows - Go      |    680 req/s   | 14.69 ms     |    713 req/s    | 139 ms       |    703 req/s    | 349 ms       |
 
 
-# Test environment
+## Test environment
 
 - Bare metal PC with i5-3570 CPU @ 3.40GHz
 - OS: Debian 10 (buster)
