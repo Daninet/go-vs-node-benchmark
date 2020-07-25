@@ -1,0 +1,116 @@
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/flights_sorted 
+Bombarding http://192.168.5.10:3001/flights_sorted for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       324.32      67.59     513.80
+  Latency       30.78ms    21.93ms   322.44ms
+  Latency Distribution
+     50%    29.41ms
+     75%    34.00ms
+     90%    40.24ms
+     95%    44.77ms
+     99%    66.01ms
+  HTTP codes:
+    1xx - 0, 2xx - 3252, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    45.79MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/flights_sorted 
+Bombarding http://192.168.5.10:3002/flights_sorted for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       680.10     116.16     975.70
+  Latency       14.69ms    12.88ms   302.20ms
+  Latency Distribution
+     50%    13.01ms
+     75%    16.39ms
+     90%    20.48ms
+     95%    23.44ms
+     99%    30.63ms
+  HTTP codes:
+    1xx - 0, 2xx - 6808, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    92.09MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/flights_sorted 
+Bombarding http://192.168.5.10:3001/flights_sorted for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       300.27     115.98    1231.31
+  Latency      328.09ms   189.24ms      0.87s
+  Latency Distribution
+     50%   239.89ms
+     75%   452.10ms
+     90%   627.19ms
+     95%   647.91ms
+     99%   688.14ms
+  HTTP codes:
+    1xx - 0, 2xx - 3101, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    41.93MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/flights_sorted 
+Bombarding http://192.168.5.10:3002/flights_sorted for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       713.48     129.11    1199.96
+  Latency      139.47ms    79.35ms   831.49ms
+  Latency Distribution
+     50%   127.67ms
+     75%   180.01ms
+     90%   241.43ms
+     95%   296.01ms
+     99%   423.80ms
+  HTTP codes:
+    1xx - 0, 2xx - 7232, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    95.44MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/flights_sorted 
+Bombarding http://192.168.5.10:3001/flights_sorted for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       241.98     102.10     700.00
+  Latency         0.96s      0.99s     10.01s
+  Latency Distribution
+     50%   577.46ms
+     75%   622.40ms
+     90%   682.57ms
+     95%      1.57s
+     99%     10.01s
+  HTTP codes:
+    1xx - 0, 2xx - 2572, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 96
+  Errors:
+    the server closed connection before returning the first response byte. Make sure the server returns 'Connection: close' response header before closing the connection - 90
+    read tcp 192.168.5.2:64480->192.168.5.10:3001: i/o timeout - 1
+    read tcp 192.168.5.2:64484->192.168.5.10:3001: i/o timeout - 1
+    read tcp 192.168.5.2:64492->192.168.5.10:3001: i/o timeout - 1
+    read tcp 192.168.5.2:64491->192.168.5.10:3001: i/o timeout - 1
+    read tcp 192.168.5.2:64493->192.168.5.10:3001: i/o timeout - 1
+    read tcp 192.168.5.2:64494->192.168.5.10:3001: i/o timeout - 1
+  Throughput:    34.39MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/flights_sorted 
+Bombarding http://192.168.5.10:3002/flights_sorted for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec       703.43     153.75    1434.79
+  Latency      349.28ms   228.77ms      2.61s
+  Latency Distribution
+     50%   339.11ms
+     75%   398.57ms
+     90%   651.00ms
+     95%   739.90ms
+     99%      1.14s
+  HTTP codes:
+    1xx - 0, 2xx - 7272, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    95.28MB/s
+
+CLINK C:\Projects\bench>sleep 10 

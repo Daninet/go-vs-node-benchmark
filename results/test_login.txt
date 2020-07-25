@@ -1,0 +1,108 @@
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l --print=i,r http://192.168.5.10:3001/login 
+Bombarding http://192.168.5.10:3001/login for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     28611.08    3774.08   33399.83
+  Latency      348.50us   105.58us    16.00ms
+  Latency Distribution
+     50%     0.00us
+     75%     1.00ms
+     90%     1.00ms
+     95%     1.00ms
+     99%     1.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 286097, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    12.36MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l --print=i,r http://192.168.5.10:3002/login 
+Bombarding http://192.168.5.10:3002/login for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     33259.30    3783.27   36697.61
+  Latency      299.52us   108.66us    21.76ms
+  Latency Distribution
+     50%     0.00us
+     75%     1.00ms
+     90%     1.00ms
+     95%     1.00ms
+     99%     1.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 332556, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    13.13MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l --print=i,r http://192.168.5.10:3001/login 
+Bombarding http://192.168.5.10:3001/login for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     35900.36    5398.58   39953.00
+  Latency        2.78ms   507.82us    54.00ms
+  Latency Distribution
+     50%     3.00ms
+     75%     3.00ms
+     90%     4.00ms
+     95%     5.00ms
+     99%     7.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 358946, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    15.51MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l --print=i,r http://192.168.5.10:3002/login 
+Bombarding http://192.168.5.10:3002/login for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     72848.95   11964.18   85150.43
+  Latency        1.37ms   288.53us    52.00ms
+  Latency Distribution
+     50%     1.00ms
+     75%     2.00ms
+     90%     2.00ms
+     95%     3.00ms
+     99%     7.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 728399, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    28.76MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l --print=i,r http://192.168.5.10:3001/login 
+Bombarding http://192.168.5.10:3001/login for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     36113.17    4344.25   44849.55
+  Latency        6.92ms     2.66ms   251.39ms
+  Latency Distribution
+     50%     6.00ms
+     75%     7.00ms
+     90%    10.00ms
+     95%    10.00ms
+     99%    12.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 361213, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    15.60MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l --print=i,r http://192.168.5.10:3002/login 
+Bombarding http://192.168.5.10:3002/login for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     73355.09   12949.11   91059.89
+  Latency        3.41ms   433.31us    58.00ms
+  Latency Distribution
+     50%     3.00ms
+     75%     4.00ms
+     90%     5.00ms
+     95%     7.00ms
+     99%    15.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 733359, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    28.95MB/s
+
+CLINK C:\Projects\bench>sleep 10 

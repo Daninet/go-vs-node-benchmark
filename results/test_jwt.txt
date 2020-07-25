@@ -1,0 +1,108 @@
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/jwt 
+Bombarding http://192.168.5.10:3001/jwt for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     23312.66    3293.99   26386.54
+  Latency      427.87us   133.50us    20.00ms
+  Latency Distribution
+     50%     0.00us
+     75%     1.00ms
+     90%     1.00ms
+     95%     1.00ms
+     99%     1.03ms
+  HTTP codes:
+    1xx - 0, 2xx - 233107, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    11.92MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 10 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/jwt 
+Bombarding http://192.168.5.10:3002/jwt for 10s using 10 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     30569.81    5104.19   35502.66
+  Latency      325.76us   180.81us    55.00ms
+  Latency Distribution
+     50%     0.00us
+     75%     1.00ms
+     90%     1.00ms
+     95%     1.00ms
+     99%     1.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 305744, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    14.49MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/jwt 
+Bombarding http://192.168.5.10:3001/jwt for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     27408.09    4197.84   31502.99
+  Latency        3.65ms   724.25us    56.01ms
+  Latency Distribution
+     50%     3.00ms
+     75%     4.00ms
+     90%     5.00ms
+     95%     6.00ms
+     99%     9.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 273724, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    13.99MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 100 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/jwt 
+Bombarding http://192.168.5.10:3002/jwt for 10s using 100 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     60710.63    9478.02   69247.58
+  Latency        1.65ms   342.40us    53.00ms
+  Latency Distribution
+     50%     1.00ms
+     75%     2.00ms
+     90%     3.00ms
+     95%     3.00ms
+     99%     7.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 606980, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    28.77MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3001/jwt 
+Bombarding http://192.168.5.10:3001/jwt for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     27636.73    3326.75   31350.16
+  Latency        9.04ms     3.90ms   316.68ms
+  Latency Distribution
+     50%     9.00ms
+     75%     9.00ms
+     90%    10.00ms
+     95%    13.00ms
+     99%    17.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 276517, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    14.12MB/s
+
+CLINK C:\Projects\bench>sleep 10 
+
+CLINK C:\Projects\bench>bombardier -c 250 -d 10s -l -H "Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU5MzkzNDYsInVzZXIiOnsiZmlyc3RfbmFtZSI6IkpvaG4iLCJpZCI6MTAxLCJsYXN0X25hbWUiOiJEb2UifX0.42xOa6_XYspJ4mys-0xTLF-kSjJTUa_Gy_YQ-U2j-gkCXM5v2aIoQIihwcMXC7tM0bsG_R2NXbc3f6HnMZALLQ" --print=i,r http://192.168.5.10:3002/jwt 
+Bombarding http://192.168.5.10:3002/jwt for 10s using 250 connection(s)
+Statistics        Avg      Stdev        Max
+  Reqs/sec     60518.71   11204.59   74297.40
+  Latency        4.13ms   551.89us    78.00ms
+  Latency Distribution
+     50%     4.00ms
+     75%     5.00ms
+     90%     6.00ms
+     95%     9.00ms
+     99%    17.00ms
+  HTTP codes:
+    1xx - 0, 2xx - 605000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    28.67MB/s
+
+CLINK C:\Projects\bench>sleep 10 
