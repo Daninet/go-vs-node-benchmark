@@ -136,6 +136,7 @@ func flightsHandler(c *fiber.Ctx) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	defer rows.Close()
 	data := make([]Flight, 0)
 
