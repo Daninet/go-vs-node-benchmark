@@ -29,3 +29,19 @@ services:
     depends_on:
       - go
       - js
+
+  # haproxy:
+  #   build: ./haproxy
+  #   ports:
+  #   - "81:80"
+  #   depends_on:
+  #     - go
+  #     - js
+
+  # envoy:
+  #   build: ./envoy
+  #   ports:
+  #   - "83:80"
+  #   depends_on:
+  #     - go
+  #     - js
