@@ -29,30 +29,36 @@ fastify.get('/login', async (request, reply) => {
 });
 
 fastify.get('/jwt', { preValidation: [fastify.authenticate] }, async (request, reply) => {
-  return { payload: request.user };
+  return request.user;
 });
 
-async function getFlights (limit) {
-  return await fastify.pg.query(
-    `SELECT * FROM bookings.flights WHERE aircraft_code = $1 ORDER BY flight_id LIMIT ${limit}`,
-    ['321']
-  );
-}
 
 fastify.get('/flight', { preValidation: [fastify.authenticate] }, async (request, reply) => {
-  const { rows } = await getFlights(1);
+  const query = 'SELECT flight_id, flight_no, scheduled_departure, scheduled_arrival, departure_airport, arrival_airport, status, aircraft_code, actual_departure, actual_arrival FROM bookings.flights WHERE aircraft_code = $1 ORDER BY flight_id LIMIT 1';
+  const { rows } = await fastify.pg.query(
+    query,
+    ['321']
+  );
 
   return rows;
 });
 
 fastify.get('/flights', { preValidation: [fastify.authenticate] }, async (request, reply) => {
-  const { rows } = await getFlights(500);
+  const query = 'SELECT flight_id, flight_no, scheduled_departure, scheduled_arrival, departure_airport, arrival_airport, status, aircraft_code, actual_departure, actual_arrival FROM bookings.flights WHERE aircraft_code = $1 ORDER BY flight_id LIMIT 500';
+  const { rows } = await fastify.pg.query(
+    query,
+    ['321']
+  );
 
   return rows;
 });
 
 fastify.get('/flights_sorted', { preValidation: [fastify.authenticate] }, async (request, reply) => {
-  const { rows } = await getFlights(500);
+  const query = 'SELECT flight_id, flight_no, scheduled_departure, scheduled_arrival, departure_airport, arrival_airport, status, aircraft_code, actual_departure, actual_arrival FROM bookings.flights WHERE aircraft_code = $1 ORDER BY flight_id LIMIT 500';
+  const { rows } = await fastify.pg.query(
+    query,
+    ['321']
+  );
 
   rows.sort((a, b) => new Date(b.scheduled_departure).getTime() - new Date(a.scheduled_departure).getTime());
 
