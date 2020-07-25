@@ -49,5 +49,5 @@
 - Bare metal PC with i5-3570 CPU @ 3.40GHz
 - OS: Debian 10 (buster)
 - Running Docker containers (JS and Go backend + Postgres v12)
-- Measurements from a separate PC on Gigabit LAN.
+- Measurements over Gigabit LAN from a different PC using `bombardier`.
 
