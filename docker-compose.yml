@@ -1,4 +1,4 @@
-version: "3.3"
+version: "2"
 services:
   postgres:
     image: postgres:12.3
@@ -21,3 +21,11 @@ services:
     - "3002:3002"
     depends_on:
       - postgres
+
+  nginx:
+    build: ./nginx
+    ports:
+    - "80:80"
+    depends_on:
+      - go
+      - js
